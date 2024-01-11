@@ -56,7 +56,6 @@ dash-daq==0.5.0
 dash-html-components==2.0.0
 dash-table==5.0.0
 dask==2023.4.0
-dataprep==0.4.5
 debugpy==1.6.6
 decorator==5.1.1
 defusedxml==0.7.1
@@ -155,7 +154,6 @@ kiwisolver==1.4.4
 langcodes==3.3.0
 language-tool-python==2.7.1
 lazy_loader==0.1
-Levenshtein==0.23.0
 libclang==16.0.0
 lightgbm==3.3.5
 littleutils==0.2.2
