@@ -256,14 +256,6 @@ pynput==1.7.6
 pyod==1.1.2
 pyparsing==3.0.9
 PyPDF2==3.0.1
-PyQt5==5.15.9
-pyqt5-plugins==5.15.9.2.3
-PyQt5-Qt5==5.15.2
-PyQt5-sip==12.12.1
-pyqt5-tools==5.15.9.3.3
-PyQt5Designer==5.14.1
-PyQtWebEngine==5.15.6
-PyQtWebEngine-Qt5==5.15.2
 pyrsistent==0.19.3
 pyspellchecker==0.7.2
 pytest==7.3.0
