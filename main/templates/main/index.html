@@ -2,7 +2,7 @@
 {% load static %}
 {% block main %}
     <div class="container">
-		<img src="{% static './main/stack.png' %}">
+		<img src="{% static 'main/stack.png' %}">
     {% if request.user.is_authenticated %}
 		<h1>Welcome to the Club, {{ request.user }}!</h1>
     {% else %}
