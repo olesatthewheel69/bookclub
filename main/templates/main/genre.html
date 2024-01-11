@@ -1,0 +1,31 @@
+{% extends "main/layout.html" %}
+{% load static %}
+{% block main %}
+	<div class="genre-container">
+		<h1>You are at {{ genre.name }}</h1>
+		<p>{{ genre.description }}</p>
+		<h2>Here are some books of {{ genre.name }} genre</h2>
+		<table>
+            <thead>
+			    <tr>
+			    	<th>Id</th>
+					<th>Name</th>
+					<th>Author</th>
+					<th>Year</th>
+					<th>Description</th>
+			    </tr>
+		  	</thead>
+		  	<tbody>
+		  	{% for book in books %}
+	        	<tr>
+	        		<th>{{ forloop.counter }}</th>
+	        		<th><a href="{% url 'book' book.id %}">{{ book.name }}</a></th>
+	        		<th>{{ book.author }}</th>
+	        		<th>{{ book.year }}</th>
+	        		<th>{{ book.description }}</th>
+	        	</tr>
+        	{% endfor %}
+		  	</tbody>
+		</table>
+	</div>
+{% endblock %}

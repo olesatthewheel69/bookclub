@@ -1,0 +1,11 @@
+{% extends "main/layout.html" %}
+{% load static %}
+{% block main %}
+	<div class="book-container">
+		<h2>You've loaded the book "{{ book.name }}" by {{ book.author }}. <span id="highlight">Happy reading!!!</span></h2>
+		
+		<iframe src="{{ book.link }}">
+				
+		</iframe>
+	</div>
+{% endblock %}

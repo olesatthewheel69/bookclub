@@ -1,0 +1,40 @@
+{% extends "main/layout.html" %}
+{% load static %}
+{% block main %}
+    <div class="container">
+		<img src="{% static 'main/stack.png' %}">
+    {% if request.user.is_authenticated %}
+		<h1>Welcome to the Club, {{ request.user }}!</h1>
+    {% else %}
+        <h1>Welcome to the Club!</h1>
+    {% endif %}
+        <h2>About Us</h2>
+        <p>
+            Discover the power of words as we embark on a literary journey together. Our book club is a sanctuary for passionate readers, where the pages come alive and discussions ignite. Dive into worlds created by extraordinary authors, explore diverse genres, and uncover the hidden treasures within the written word.
+        </p>
+        <h2>Our Book Selection</h2>
+        <p>
+            Each month, we carefully curate a captivating selection of books that span various genres and styles. From thought-provoking contemporary fiction to timeless classics, our aim is to challenge, entertain, and inspire. Join us as we explore the depths of storytelling and share our love for literature.
+        </p>
+        <h2>Monthly Meetings</h2>
+        <p>
+            Gather with fellow book enthusiasts for our lively monthly meetings. Engage in lively discussions, exchange ideas, and delve into the intricacies of the books we've read. We value diverse perspectives and encourage everyone to contribute, fostering an inclusive and welcoming environment.
+        </p>
+        <h2>Author Spotlights</h2>
+        <p>
+            Experience the magic of meeting celebrated authors up close and personal. Throughout the year, we invite renowned writers to share their insights, inspirations, and behind-the-scenes stories. Get a glimpse into the creative process and have the opportunity to ask burning questions in these exclusive author spotlights.
+        </p>
+        <h2>Online Community</h2>
+        <p>
+            Can't make it to our physical meetings? Don't worry! Join our vibrant online community and engage in virtual discussions. Connect with book lovers from around the globe, exchange book recommendations, and participate in exciting online events. The love for literature knows no boundaries!
+        </p>
+        <h2>Reading Challenges</h2>
+        <p>
+            Expand your reading horizons with our stimulating reading challenges. From themed challenges to diverse author explorations, we encourage our members to step outside their comfort zones and embark on literary adventures they may have never considered before. Discover new favorites and broaden your literary palette.
+        </p>
+        <h2>The Joy of Reading</h2>
+        <p>
+            At the heart of our book club lies the pure joy of reading. We celebrate the transformative power of books and the way they connect us through shared experiences. So come, join us on this literary expedition, where the magic of storytelling unfolds, and lifelong friendships are formed.
+        </p>
+    </div>
+{% endblock %}
