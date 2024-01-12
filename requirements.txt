@@ -296,6 +296,7 @@ webencodings==0.5.1
 websocket-client==1.5.1
 Werkzeug==2.3.0
 whichcraft==0.6.1
+whitenoise
 widgetsnbextension==3.6.4
 wordcloud==1.8.2.2
 wordsegment==1.3.1
